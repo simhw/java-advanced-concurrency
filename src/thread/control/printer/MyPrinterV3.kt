@@ -1,6 +1,6 @@
 package thread.control.printer
 
-import thread.util.MyLogger.log
+import util.MyLogger.log
 import java.util.*
 import java.util.concurrent.ConcurrentLinkedQueue
 

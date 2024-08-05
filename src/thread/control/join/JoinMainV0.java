@@ -1,7 +1,7 @@
 package thread.control.join;
 
-import static thread.util.MyLogger.log;
-import static thread.util.ThreadUtils.*;
+import static util.MyLogger.log;
+import static util.ThreadUtils.*;
 
 public class JoinMainV0 {
     public static void main(String[] args) {

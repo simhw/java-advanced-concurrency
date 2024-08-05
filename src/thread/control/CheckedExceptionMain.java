@@ -1,6 +1,6 @@
 package thread.control;
 
-import thread.util.ThreadUtils;
+import util.ThreadUtils;
 
 public class CheckedExceptionMain {
     public static void main(String[] args) {

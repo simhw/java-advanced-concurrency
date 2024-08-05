@@ -1,6 +1,6 @@
 package thread.start;
 
-import static thread.util.MyLogger.log;
+import static util.MyLogger.log;
 
 // 익명 클래스
 public class InnerRunnableMainV2 {
