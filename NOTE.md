@@ -102,4 +102,13 @@
     - 멀티 스레드 환경에서 스레드 간의 상호작용을 정의
 - happens-before
     - JMM에서 스레드 간의 작업 순서를 정의하는 개념
-    - A 작업이 B작업보다 happens-before 관계에 있다면, B 작업이 시작되기 전 모두 메모리에 반영 
+    - A 작업이 B작업보다 happens-before 관계에 있다면, B 작업이 시작되기 전 모두 메모리에 반영
+
+## 6. 동기화 - synchronized
+
+## 6.1 synchronized 메서드
+
+- synchronized 분석
+    - 스레드가 synchronized 메서드에 진입하려면 인스턴스의 락이 필요
+    - 락을 획득한 스레드만 BLOCKED에서 RUNNABLE 상태로 전환
+    - 락을 획득하는 순서는 보장되지 않음 
