@@ -11,7 +11,8 @@ import static util.ThreadUtils.sleep;
 
 public class ExecutorBasicMain {
     public static void main(String[] args) {
-        ExecutorService es = new ThreadPoolExecutor(2, 2, 0, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
+        ExecutorService es = new ThreadPoolExecutor(2, 2, 0,
+                TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>());
 
         log("============ init ============");
         printState(es);
@@ -32,25 +33,4 @@ public class ExecutorBasicMain {
         printState(es);
     }
 
-    static class RunnableTask implements Runnable {
-
-        private final String name;
-        private int sleepMs = 1000;
-
-        RunnableTask(String name) {
-            this.name = name;
-        }
-
-        RunnableTask(String name, int sleepMs) {
-            this.name = name;
-            this.sleepMs = sleepMs;
-        }
-
-        @Override
-        public void run() {
-            log(name + " start()");
-            sleep(sleepMs);
-            log(name + " end()");
-        }
-    }
 }
